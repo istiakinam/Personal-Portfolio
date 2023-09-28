@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2c7b2425e2.js" crossorigin="anonymous"></script>
     <title>I. A. Inam</title>
 </head>
 <body>
@@ -26,6 +27,7 @@
             </div>
         </div>
     </div>
+
     <!-- --------about---------   -->
     <div id="about">
         <div class="container">
@@ -38,13 +40,70 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, pariatur, iure dolore temporibus totam hic ad tempora voluptas possimus aut ratione sapiente vel ab quae consequuntur doloremque inventore amet quis?<br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat et laudantium officiis quae cum sapiente alias explicabo, repellendus quia doloribus dolorum vitae reiciendis quod dolorem dolor eveniet consequuntur! Dignissimos, perferendis!</p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" id="skills">Skills</p>
+                        <p class="tab-links" id="experience">Experience</p>
+                        <p class="tab-links" id="education">Education</p>
                     </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>Web Development <br> <span>Web app development</span></li>
+                            <li>App Development <br> <span>Android/iOS app development</span></li>
+                            <li>Software Development <br> <span>Custom software development</span></li>
+                            <li>Team Hiring <br> <span>I am able to provide a team of developers for BPO</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Managing a team of developers since 2021 at <a href='https://www.kandari.tech'>Kandari Technologies</a></span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>BSc <br> <span>Computer Science and Engineering <br> BRAC University</span></li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- ------------services---------    -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code fa-bounce fa-xl"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem blanditiis ea minus sint numquam, quaerat fugiat ad aliquid, id ex praesentium voluptate perferendis? Ullam dolores eveniet alias cumque adipisci ipsam.</p>
+                    <a href="#">Learn more...</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store fa-bounce fa-xl"></i>
+                    <h2>Mobile App Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem blanditiis ea minus sint numquam, quaerat fugiat ad aliquid, id ex praesentium voluptate perferendis? Ullam dolores eveniet alias cumque adipisci ipsam.</p>
+                    <a href="#">Learn more...</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-city fa-bounce fa-xl"></i>
+                    <h2>Custom Software Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem blanditiis ea minus sint numquam, quaerat fugiat ad aliquid, id ex praesentium voluptate perferendis? Ullam dolores eveniet alias cumque adipisci ipsam.</p>
+                    <a href="#">Learn more...</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-people-group fa-bounce fa-xl"></i>
+                    <h2>Technical Team for BPO</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem blanditiis ea minus sint numquam, quaerat fugiat ad aliquid, id ex praesentium voluptate perferendis? Ullam dolores eveniet alias cumque adipisci ipsam.</p>
+                    <a href="#">Learn more...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
