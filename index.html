@@ -12,14 +12,16 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <img src="images/Logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Web Developer</p>
@@ -33,7 +35,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.png">
+                    <img src="images/user.jpg">
                 </div>
                 <div class="about-col-2">
                     <h1 class="subtitle">About Me</h1>
@@ -77,25 +79,25 @@
             <h1 class="subtitle">Services</h1>
             <div class="services-list">
                 <div>
-                    <i class="fa-solid fa-code fa-bounce fa-xl"></i>
+                    <i class="fa-solid fa-code fa-bounce fa-xl" id="webIcon"></i>
                     <h2>Web Development</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem blanditiis ea minus sint numquam, quaerat fugiat ad aliquid, id ex praesentium voluptate perferendis? Ullam dolores eveniet alias cumque adipisci ipsam.</p>
                     <a href="#">Learn more...</a>
                 </div>
                 <div>
-                    <i class="fa-brands fa-app-store fa-bounce fa-xl"></i>
+                    <i class="fa-brands fa-app-store fa-bounce fa-xl" id="appIcon"></i>
                     <h2>Mobile App Development</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem blanditiis ea minus sint numquam, quaerat fugiat ad aliquid, id ex praesentium voluptate perferendis? Ullam dolores eveniet alias cumque adipisci ipsam.</p>
                     <a href="#">Learn more...</a>
                 </div>
                 <div>
-                    <i class="fa-solid fa-city fa-bounce fa-xl"></i>
+                    <i class="fa-solid fa-city fa-bounce fa-xl" id="softIcon"></i>
                     <h2>Custom Software Development</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem blanditiis ea minus sint numquam, quaerat fugiat ad aliquid, id ex praesentium voluptate perferendis? Ullam dolores eveniet alias cumque adipisci ipsam.</p>
                     <a href="#">Learn more...</a>
                 </div>
                 <div>
-                    <i class="fa-solid fa-people-group fa-bounce fa-xl"></i>
+                    <i class="fa-solid fa-people-group fa-bounce fa-xl" id="teamIcon"></i>
                     <h2>Technical Team for BPO</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem blanditiis ea minus sint numquam, quaerat fugiat ad aliquid, id ex praesentium voluptate perferendis? Ullam dolores eveniet alias cumque adipisci ipsam.</p>
                     <a href="#">Learn more...</a>
@@ -104,6 +106,75 @@
         </div>
     </div>
 
+    <!-- ----------------Portfolio---------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <h3>Website Development for Bopinc</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, ducimus culpa at nesciunt, accusamus nobis quisquam amet dolorem ut commodi facere dolores sed, magnam odit soluta quam est aliquid officia.</p>
+                        <a href="#"><i class="fa-solid fa-link fa-beat"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg">
+                    <div class="layer">
+                        <h3>English Language learning Website</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, ducimus culpa at nesciunt, accusamus nobis quisquam amet dolorem ut commodi facere dolores sed, magnam odit soluta quam est aliquid officia.</p>
+                        <a href="#"><i class="fa-solid fa-link fa-beat"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg">
+                    <div class="layer">
+                        <h3>Education Management System for Augmenta</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, ducimus culpa at nesciunt, accusamus nobis quisquam amet dolorem ut commodi facere dolores sed, magnam odit soluta quam est aliquid officia.</p>
+                        <a href="#"><i class="fa-solid fa-link fa-beat"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-4.jpg">
+                    <div class="layer">
+                        <h3>Language Learning Platform for Maison Ensemble</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, ducimus culpa at nesciunt, accusamus nobis quisquam amet dolorem ut commodi facere dolores sed, magnam odit soluta quam est aliquid officia.</p>
+                        <a href="#"><i class="fa-solid fa-link fa-beat"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">There's More...</a>
+        </div>
+    </div>
+    <!-- -----------contact------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>istiak.inam@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile"></i> +880 1672 274 033</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/istiak.inam"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <button id="backToTop"><i class="fa-solid fa-chevron-up"></i></button>
+    <div class="copyright">
+        <p>Copyright © Inam. Made by Kandari Tech</p>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
