@@ -48,3 +48,20 @@ window.addEventListener('scroll', () => {
         backToTop.style.display = 'none'
     }
 })
+
+const msg = document.getElementById('msg')
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwemFeLLfSlTWwwsBU5PHGZ_oTRp0UUD09NhZoqdCEakSrmkqMskJFl_Ia3Iie5p9puVg/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = 'Message sent successfully!'
+        setTimeout(function() {
+            msg.innerHTML = ''
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })

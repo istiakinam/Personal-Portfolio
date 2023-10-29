@@ -399,3 +399,9 @@ nav .fa-solid {
         padding: 7.5px 7.5px;
     }
 }
+
+#msg {
+    color: #ec6464;
+    margin-top: 10px;
+    display: block;
+}
